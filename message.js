@@ -78,7 +78,7 @@ function checkBoxes(){
 
 //Concatena todas as funções anteriores com template string e lança o resultado no textarea ao lado
 document.querySelector("#generate-message").addEventListener('click', () => {
-	finalMessage.innerHTML = `${greetTimes()}\n${qtdProductsSolic()}\n${convertTextArea()}\n${checkBoxes()}\nSe tiverem, podem nos enviar também as informações de INMETRO do produto.\nAgradeço(a)!\n\nAtt,`
+	finalMessage.innerHTML = `${greetTimes()}\n${qtdProductsSolic()}\n${convertTextArea()}\n${checkBoxes()}\nSe tiverem, podem nos enviar também as informações de INMETRO do produto.\nAgradeço!\n\nAtt,`
 })
 
 //Função do botão Copiar Conteúdo para área de transferência
