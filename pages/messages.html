@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simplicador Solicitações</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/favicon.png">
+    </head>
+    <body>
+        <form action="" class="d-flex flex-dir-column" id="full-form">
+            <div class="solicit-container">
+                <label for="opt-solicitation">Selecione o que será solicitado:</label>
+                <input name="solicitation" id="ficha" value="ficha" type="checkbox">
+                <label for="solicitation">Ficha Técnica</label>
+                <input name="solicitation" id="img" value="ficha" type="checkbox">
+                <label for="solicitation">Imagens</label>
+            </div>
+            <div class="container-textareas">
+                <textarea placeholder="Informe o código, nome, modelo e cores dos produtos se necessário, separados por ponto e vírgula (;) respectivamente e um produto por linha." name="infos-products" id="products-infos" cols="30" rows="10"></textarea>
+                <textarea name="final-message" id="fnl-mssg" cols="30" rows="10" disabled="disabled"></textarea>
+            </div>
+            <button id="generate-message" type="button">Gerar Mensagem</button>
+            <button id="copy-clipboard" type="button">Copiar conteúdo</button>
+        </form>
+        <script src="../js/message.js"></script>
+    </body>
+</html>
